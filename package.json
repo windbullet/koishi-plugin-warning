@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-warning",
   "description": "检测到特定消息就提醒特定的人",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [

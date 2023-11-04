@@ -24,7 +24,8 @@ export function apply(ctx: Context, config: Config) {
   ctx.guild().middleware(async (session, next) => {
     for (let i of config.提醒关键词) {
       if (new RegExp(`${i}`).test(session.content) && (config.自我触发 ? true : session.event.user.id !== config.接收提醒的人)) {
-        await session.bot.sendPrivateMessage(config.接收提醒的人, `
+        const channel = await session.bot.createDirectChannel(config.接收提醒的人)
+        await session.bot.sendMessage(channel.id, `
 【WARNING】
 触发关键词：${i}
 触发群聊：${session.event.guild.name}(${session.event.channel.id})
