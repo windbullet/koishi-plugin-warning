@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-warning",
   "description": "检测到特定消息就提醒特定的人",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -9,6 +9,11 @@
     "dist"
   ],
   "license": "MIT",
+  "homepage": "https://github.com/windbullet/koishi-plugin-warning",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windbullet/koishi-plugin-warning.git"
+  },
   "scripts": {},
   "keywords": [
     "chatbot",
