@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-warning",
-  "description": "检测到特定消息就提醒特定的人",
-  "version": "0.2.2",
+  "description": "检测到特定消息就私聊提醒特定的人",
+  "version": "0.3.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -22,5 +22,12 @@
   ],
   "peerDependencies": {
     "koishi": "4.15.3"
+  },
+  "koishi": {
+    "service": {
+      "required": ["database"],    
+      "optional": [],       
+      "implements": []
+    }
   }
 }
