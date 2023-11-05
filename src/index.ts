@@ -2,7 +2,13 @@ import { Context, Schema, h } from 'koishi'
 
 export const name = 'warning'
 
-export const usage = "接收提醒的人需要是机器人的好友"
+export const usage = `接收提醒的人需要是机器人的好友  
+指令使用方法：  
+> 添加提醒关键词 <关键词>  
+>> 添加对于该群的提醒关键词  
+> 删除提醒关键词 <关键词>  
+>> 删除对于该群的提醒关键词  
+`
 
 export const inject = ['database']
 
