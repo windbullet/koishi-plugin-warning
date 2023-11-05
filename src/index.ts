@@ -32,10 +32,9 @@ export function apply(ctx: Context, config: Config) {
 触发用户：${session.username}(${session.event.user.id})
 消息内容：
 ${session.content}`)
-      } else {
-        return next()
       }
     }
+    return next()
     
   }), true
 }
