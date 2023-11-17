@@ -56,7 +56,7 @@ export function apply(ctx: Context, config: Config) {
     await session.bot.sendMessage(channel.id, `
 【WARNING】
 触发关键词：${result.join(", ")}
-触发群聊：${session.event.guild.name}(${session.event.channel.id})
+触发群聊：${session.event.channel.name}(${session.event.guild.id})
 触发用户：${session.username}(${session.event.user.id})
 消息内容：${session.content}`)
     }

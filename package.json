@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-warning",
   "description": "消息中检测到特定关键词就私聊提醒特定的人",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
