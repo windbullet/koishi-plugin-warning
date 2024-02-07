@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-warning",
   "description": "消息中检测到特定关键词就私聊提醒特定的人",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -14,19 +14,20 @@
     "type": "git",
     "url": "git+https://github.com/windbullet/koishi-plugin-warning.git"
   },
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
     "plugin"
   ],
   "peerDependencies": {
-    "koishi": "^4.15.3"
+    "koishi": "^4.16.8"
   },
   "koishi": {
     "service": {
-      "required": ["database"],    
-      "optional": [],       
+      "required": [
+        "database"
+      ],
+      "optional": [],
       "implements": []
     }
   }
